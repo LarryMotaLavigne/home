@@ -1,0 +1,13 @@
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h1>Create your account</h1><br>
+            {% include 'core/fragments/signup_form.html' %}
+            <div class="login-social" >
+                <a href="/accounts/google/login" class="btn btn-block btn-social btn-google"><span class="fa fa-google"></span> Sign up with Google</a>
+                <a href="/accounts/twitter/login" class="btn btn-block btn-social btn-twitter"><span class="fa fa-twitter"></span> Sign up with Twitter</a>
+                <a href="/accounts/github/login" class="btn btn-block btn-social btn-github"><span class="fa fa-github"></span> Sign up with Github</a>
+            </div>
+        </div>
+    </div>
+</div>
