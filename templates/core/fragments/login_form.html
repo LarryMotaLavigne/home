@@ -1,6 +1,0 @@
-<!-- Login form -->
-<form method='post' action='{% url 'account_login' %}' id='login'>
-  {% csrf_token %}
-  {{ login_form.as_p }}
-  <input type='submit' class="login loginmodal-submit" value='LogIn'>
-</form>
