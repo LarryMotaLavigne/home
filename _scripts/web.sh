@@ -2,4 +2,5 @@
 
 cd web
 docker build . -t squalex/home
-docker run -p 80:80 -e VIRTUAL_HOST=server.home squalex/home
+docker push squalex/home
+docker run -d -p 8081:80 -l traefik.frontend.rule=Host:server.home --name server.home squalex/home
