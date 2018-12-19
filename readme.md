@@ -4,14 +4,14 @@ HOME is a development and configuration for my personal house.
 
 The acronym come for Home Operations Management System. How convenient it is ! 
 
-# My Stack
+## My Stack
 
-## What do I need ?
+### What do I need ?
 
 * A server or something looking like a server (raspberryPi, computer, ...)
 * A router you can custom according your wishes
 
-## DNS
+### DNS
 
 * [Pi-Hole](https://github.com/pi-hole/pi-hole)
     ```shell
@@ -19,12 +19,8 @@ The acronym come for Home Operations Management System. How convenient it is !
     $ sh ./home/_scripts/pihole.sh 
     ```
 
-## Server
+### Server
 
 * Docker
 
-* Nginx configuration
-    ```shell
-    $ docker build . -t squalex/nginxhome
-    $ docker push
-    ```
+* Traefik
