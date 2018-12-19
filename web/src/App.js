@@ -8,11 +8,10 @@ import FooterPage from "./Footer";
 class App extends Component {
     constructor(props) {
         super(props);
-        console.log("test");
         this.state = {
             window: ['http://server.home:8080', 'http://test.server.home', 'http://dependencytrack.server.home']
         }
-        this.getDomainNameList = this.getDomainNameList.call(this)
+        // this.getDomainNameList = this.getDomainNameList.call(this)
     }
 
 
